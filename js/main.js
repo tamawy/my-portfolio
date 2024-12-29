@@ -78,12 +78,16 @@
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');
 			$('.navbar-expand-md').removeClass('navbar-trans');
+			$('#logo-image').attr('src', 'img/tamawy-light.png');
 		} else {
 			$('.navbar-expand-md').addClass('navbar-trans');
 			$('.navbar-expand-md').removeClass('navbar-reduce');
+			$('#logo-image').attr('src', 'img/tamawy-white.png');
+
 		}
 		if ($(window).scrollTop() > top) {
 			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
+			
 		} else {
 			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
 		}
